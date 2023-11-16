@@ -10,7 +10,15 @@
         android:name="com.example.movieapp.ui.HomeParentFragment"
         android:label="HomeParentFragment"
         tools:layout="@layout/fragment_home_parent"
-        />
+        >
+        <action
+            android:id="@+id/action_homeParentFragment_to_moviesDetailFragment2"
+            app:destination="@id/moviesDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
 
     <fragment
         android:id="@+id/moviesDetailFragment"

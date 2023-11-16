@@ -42,7 +42,8 @@ class MoviesFragment : BaseFragment<FragmentMoviesBinding>(FragmentMoviesBinding
         moviesAdapter.onItemClick = {
             val moviesBundle = Bundle()
             moviesBundle.putSerializable("Movies", it)
-            findNavController().navigate(R.id.moviesDetailFragment, moviesBundle)
+         //  findNavController().navigate(R.id.moviesDetailFragment, moviesBundle)
+            findNavController().navigate(R.id.action_homeParentFragment_to_moviesDetailFragment2, moviesBundle)
         }
     }
 
